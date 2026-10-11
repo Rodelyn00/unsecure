@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local XSS Training Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <form id="loginView" method="post" action="register.php" class="auth-form" hidden>
+    <h1>Login</h1>
+    <input type="hidden" name="action" value="login">
+
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required>
+
+    <button type="submit">Log In</button>
+    <p id="message" class="message"></p>
+    <p class="switch">No account yet? <a href="register.php">Register</a></p>
+  </form>
+
+  <div id="landingView" hidden>
+    <header class="landing-header">
+      <div class="brand">
+        <img src="prof\profile.jpg" alt="Logo" class="logo">
+        <h1 id="welcome">Welcome</h1>
+      </div>
+      <a href="logout.php" class="logout">Log Out</a>
+    </header>
+
+    <main class="lab">
+      <h2>Local XSS Training Lab</h2>
+      <p class="warning">
+        For classroom use only. Run this page locally and never test it against systems you do not own.
+      </p>
+
+      <section class="card">
+        <h2>Exercise A: Reflected XSS</h2>
+        <form id="reflectedForm">
+          <label for="reflectedInput">Enter a greeting:</label>
+          <textarea id="reflectedInput" placeholder="Type a message"></textarea>
+          <button type="submit">Display Message</button>
+        </form>
+        <div id="reflectedOutput" class="output"></div>
+      </section>
+
+      <section class="card">
+        <h2>Exercise B: DOM XSS</h2>
+        <label for="domInput">Enter a message:</label>
+        <textarea id="domInput" placeholder="Type a message"></textarea>
+        <button id="domButton">Display Message</button>
+        <div id="domOutput" class="output"></div>
+      </section>
+
+      <section class="card">
+        <h2>Exercise C: Safe Output</h2>
+        <label for="safeInput">Enter a message:</label>
+        <textarea id="safeInput" placeholder="Type a message"></textarea>
+        <button id="safeButton">Display Safely</button>
+        <div id="safeOutput" class="output"></div>
+      </section>
+    </main>
+
+    <footer class="landing-footer">
+      Western Institute of Technology - PSITS
+    </footer>
+  </div>
+
+  <script src="landing.js"></script>
+</body>
+</html>

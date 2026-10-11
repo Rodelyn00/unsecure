@@ -1,0 +1,214 @@
+:root {
+  --cream: #fff8e7;
+  --lavender: #d8c8f0;
+  --matcha: #6b8f47;
+  --matcha-dark: #4b6a2f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.auth-body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: var(--lavender);
+}
+
+.auth-form {
+  width: 100%;
+  max-width: 420px;
+  padding: 40px 36px;
+  background: var(--cream);
+  color: var(--matcha);
+  border-radius: 40px;
+  box-shadow: 0 8px 24px #0003;
+}
+
+.auth-form h1 {
+  margin: 0 0 20px;
+  text-align: center;
+  color: var(--matcha-dark);
+}
+
+.auth-form label {
+  display: block;
+  margin: 14px 0 6px;
+  font-weight: bold;
+  color: var(--matcha);
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 12px 18px;
+  font-size: 15px;
+  color: var(--matcha-dark);
+  background: #fffdf5;
+  border: 2px solid var(--matcha);
+  border-radius: 999px;
+  outline: none;
+}
+
+.auth-form input:focus {
+  border-color: var(--matcha-dark);
+}
+
+.auth-form button {
+  width: 100%;
+  margin-top: 24px;
+  padding: 13px;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--cream);
+  background: var(--matcha);
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.auth-form button:hover {
+  background: var(--matcha-dark);
+}
+
+.message {
+  min-height: 20px;
+  margin: 14px 0 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.message.error {
+  color: #9b1c1c;
+}
+
+.message.success {
+  color: var(--matcha-dark);
+}
+
+.switch {
+  margin: 10px 0 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.switch a {
+  color: var(--matcha-dark);
+  font-weight: bold;
+}
+
+.landing-body {
+  min-height: 100vh;
+  background: var(--cream);
+  color: var(--matcha-dark);
+}
+
+.landing-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+}
+
+.landing-header h1 {
+  margin: 0;
+  color: var(--matcha-dark);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.logout {
+  padding: 10px 22px;
+  color: var(--cream);
+  background: var(--matcha);
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.logout:hover {
+  background: var(--matcha-dark);
+}
+
+.lab {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 10px 20px 40px;
+}
+
+.warning {
+  color: #9b1c1c;
+  font-weight: bold;
+}
+
+.card {
+  margin-bottom: 20px;
+  padding: 24px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #0002;
+}
+
+.card h2 {
+  color: var(--matcha-dark);
+}
+
+.card label {
+  color: var(--matcha);
+  font-weight: bold;
+}
+
+textarea {
+  width: 100%;
+  min-height: 90px;
+  margin-top: 8px;
+  padding: 10px;
+}
+
+.card button {
+  margin-top: 10px;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.output {
+  min-height: 30px;
+  margin-top: 15px;
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+
+.landing-footer {
+  width: 100%;
+  border-top: 2px solid var(--matcha);
+}
+
+.landing-footer h3 {
+  margin: 50px;
+  text-align: center;
+  color: var(--matcha-dark);
+}
